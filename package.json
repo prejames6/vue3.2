@@ -1,5 +1,5 @@
 {
-  "name": "vue3.2",
+  "name": "vue_3.2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,32 +9,43 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "axios": "^1.6.8",
-    "core-js": "^3.8.3",
-    "vue": "^3.2.13",
-    "vue-router": "^4.0.3",
-    "vuex": "^4.0.0"
+    "@element-plus/icons-vue": "^0.2.7",
+    "axios": "^0.24.0",
+    "core-js": "^3.6.5",
+    "dayjs": "^1.11.11",
+    "driver.js": "^0.9.8",
+    "element-plus": "^1.3.0-beta.5",
+    "screenfull": "^5.1.0",
+    "vue": "^3.2.8",
+    "vue-i18n": "^10.0.0-alpha.3",
+    "vue-router": "^4.0.11",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
+    "@babel/eslint-parser": "^7.24.5",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-plugin-router": "~5.0.0",
-    "@vue/cli-plugin-vuex": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "@vue/eslint-config-standard": "^6.1.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
     "cz-customizable": "^6.3.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-vue": "^8.0.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^7.0.0",
     "husky": "^7.0.1",
-    "sass": "^1.32.7",
-    "sass-loader": "^12.0.0"
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "svg-sprite-loader": "^6.0.9",
+    "unplugin-auto-import": "^0.5.11",
+    "unplugin-vue-components": "^0.17.11"
   },
   "config": {
     "commitizen": {
@@ -42,9 +53,9 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,vue}": [     
-      "eslint --fix",          
-      "git add"                
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
     ]
   }
 }
